@@ -1,0 +1,145 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1f2937;
+}
+
+.navbar {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 28px;
+  padding: 50px 20px;
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.25);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.page-title {
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.search-panel {
+  background: white;
+  padding: 22px;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  margin-bottom: 28px;
+}
+
+.book-card {
+  border: none;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: fadeUp 0.5s ease both;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+}
+
+.book-cover {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background: #f1f5f9;
+  padding: 18px;
+}
+
+.detail-cover {
+  max-height: 420px;
+  background: #f1f5f9;
+  padding: 16px;
+}
+
+.empty-cover {
+  height: 230px;
+  background: linear-gradient(135deg, #dbeafe, #ede9fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.details-card {
+  background: white;
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.btn {
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  border-radius: 14px;
+  padding: 12px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
